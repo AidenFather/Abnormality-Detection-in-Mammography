@@ -1,5 +1,7 @@
 # Abnormality-Detection-in-Mammography
 
+![Figure](https://nycdsa-blog-files.s3.us-east-2.amazonaws.com/2020/01/kitae-kim/national-cancer-institute-0izfvmwj5pw-unsplash-929392-MsbtHAkt-scaled.jpg)
+
 ## Motivation
 When I was looking for a topic for the capstone project in the data scientist bootcamp program, my wife had her first time mammogrpahy. 
 As the initial diagnose result was ambiguous, she had to make a couple of follow-up visits. Later, I got to know that she felt a lot of pain during the procedure.
@@ -36,10 +38,13 @@ Considering the size of data sets and available computing power, I decided to de
 
 
 ## CNN Models
-I designed a baseline model with a VGG (Visual Geometry Group) type structure, which includes a block of two convolutional layers with small 3×3 filters followed by a max pooling layer. The final model has four repeated blocks, and each block has a batch normalization layer followed by a max pooling layer and dropout layer. Each convolutional layer has 3×3 filters, ReLU activation, and he_uniform kernel initializer with same padding, ensuring the output feature maps have the same width and height. The architecture of the developed CNN is shown below
+I designed a baseline model with a VGG (Visual Geometry Group) type structure, which includes a block of two convolutional layers with small 3×3 filters followed by a max pooling layer. The final model has four repeated blocks, and each block has a batch normalization layer followed by a max pooling layer and dropout layer. Each convolutional layer has 3×3 filters, ReLU activation, and he_uniform kernel initializer with same padding, ensuring the output feature maps have the same width and height. The architecture of the developed CNN is shown below.
 
 ![CNN Model](https://nycdsa-blog-files.s3.us-east-2.amazonaws.com/2020/01/kitae-kim/convnet-architecture1.png-243794-tJBcx3yt.png)
 
+You can also download the trained CNN models
+- [Multi-class Classification Model](https://docs.opencv.org/trunk/d9/d61/tutorial_py_morphological_ops.html)
+- [Binary Classification Model](https://drive.google.com/open?id=1EDv3PzzT-rgr6DzljpC08H38VUZgq20q)
 
 ## Examples of Predictions
 Figure below shows that correct prediction labels are blue and incorrect prediction labels are red. The number gives the percentage for the predicted label.
