@@ -3,7 +3,7 @@
 ![Figure](https://nycdsa-blog-files.s3.us-east-2.amazonaws.com/2020/01/kitae-kim/national-cancer-institute-0izfvmwj5pw-unsplash-929392-MsbtHAkt-scaled.jpg)
 
 ## Motivation
-When I was looking for a topic for the capstone project in the data scientist bootcamp program, my wife had her first time mammogrpahy. 
+When I was looking for a topic for the capstone project in the data science bootcamp program, my wife had her first time mammogrpahy. 
 As the initial diagnose result was ambiguous, she had to make a couple of follow-up visits. Later, I got to know that she felt a lot of pain during the procedure.
 I naturally got interested in mammography diagnose and found that computer vision and deep learing could be an alternative way to read and decide the mammogrpy result.
 
@@ -21,6 +21,17 @@ Considering the benefits of using deep learning in image classification problem 
 ## Data Source
 
 I obtained mammography images from the DDSM and CBIS-DDSM databases. The [DDSM (Digital Database of Screening Mammography)](http://www.eng.usf.edu/cvprg/Mammography/Database.html) is a database of 2,620 scanned film mammography studies. It contains normal, benign, and malignant cases with verified pathology information. The [CBIS-DDSM (Curated Breast Imaging Subset of DDSM)](https://wiki.cancerimagingarchive.net/display/Public/CBIS-DDSM) is a subset of the DDSM database curated by a trained mammographer.
+
+## Notebooks
+
+- CBIS-DDSM file rename and processing -> [CBIS-DDSM_Rename_DICOM_Files.ipynb](CBIS-DDSM_Rename_DICOM_Files.ipynb) 
+- CBIS-DDSM patch extraction -> [CBIS-DDSM Patch_Extraction_256x256.ipynb](CBIS-DDSM Patch_Extraction_256x256.ipynb)
+- DDSM file format conversion -> [lJPEG to PNG Conversion.ipynb](lJPEG to PNG Conversion.ipynb)
+- DDSM data processing -> [DDSM_Patch_Extraction_256x256.ipynb](DDSM_Patch_Extraction_256x256.ipynb)
+- Data Labeling -> [Data_Labeling.ipynb](Data_Labeling.ipynb)
+- Data Preparation for model training -> [Data_Preparation_for_CNN.ipynb](Data_Preparation_for_CNN.ipynb)
+- CNN training -> [CNN Development and Evaluation.ipynb](CNN Development and Evaluation.ipynb)
+- Utility functions (python file) ->[img_processing_256.py](img_processing_256.py)
 
 ## Artifacts Removal
 
